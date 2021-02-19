@@ -9,8 +9,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
+    "@newrelic/native-metrics": "^6.0.0",
+    "aws-sdk": "^2.846.0",
     "core-js": "^3.6.5",
+    "module": "^1.2.5",
+    "newrelic": "^7.1.1",
     "register-service-worker": "^1.7.1",
+    "reinstall": "^2.0.0",
     "superagent": "^6.1.0",
     "vue": "^2.6.12",
     "vue-material": "^1.0.0-beta-14",
