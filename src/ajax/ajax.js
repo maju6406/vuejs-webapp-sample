@@ -48,7 +48,7 @@ export default class Ajax {
 
   static requestUrl(url) {
     if (process.env.NODE_ENV == 'development') {
-      return 'http://localhost:8080' + url
+      return 'http://159.203.66.121:8080' + url
     } else {
       return url
     }
