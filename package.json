@@ -13,7 +13,6 @@
     "aws-sdk": "^2.846.0",
     "core-js": "^3.6.5",
     "module": "^1.2.5",
-    "newrelic": "^7.1.1",
     "register-service-worker": "^1.7.1",
     "reinstall": "^2.0.0",
     "superagent": "^6.1.0",
