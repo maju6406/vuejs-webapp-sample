@@ -7,10 +7,6 @@ jobs:
   Release:
     runs-on: ubuntu-latest
     steps:
-    - name: Install doctl
-      uses: digitalocean/action-doctl@v2
-      with:
-        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}       
     - uses: actions/checkout@v2
       with:
         fetch-depth: 50
@@ -23,3 +19,21 @@ jobs:
           ### Changelog
 
           {commits}
+      - name: Install
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: nogsantos/ssh-scp-deploy@v1.2.1
+        with:
+          src: ./dist/*
+          host: ${{ secrets.SSH_HOST }}
+          remote: ${{ secrets.SSH_DIR }}
+          port: ${{ secrets.SSH_PORT }}
+          user: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
