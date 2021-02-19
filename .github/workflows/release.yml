@@ -28,12 +28,8 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Deploy
-      uses: nogsantos/ssh-scp-deploy@v1.2.1
+    - name: Upload build to hosting environment
+      uses: Atyn/Simple-SFTP
       with:
-        src: ./dist/*
-        host: ${{ secrets.SSH_HOST }}
-        remote: ${{ secrets.SSH_DIR }}
-        port: ${{ secrets.SSH_PORT }}
-        user: ${{ secrets.SSH_USER }}
-        key: ${{ secrets.SSH_KEY }}
+        url: ${{ secrets.SFTP_URL }}
+        local-directory: dist/*
