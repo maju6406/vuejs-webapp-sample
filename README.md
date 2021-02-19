@@ -1,5 +1,9 @@
 # vuejs-webapp-sample
 
+[![check](https://github.com/maju6406/vuejs-webapp-sample/actions/workflows/check.yml/badge.svg)](https://github.com/maju6406/vuejs-webapp-sample/actions/workflows/check.yml)
+
+[![release](https://github.com/maju6406/vuejs-webapp-sample/actions/workflows/release.yml/badge.svg)](https://github.com/maju6406/vuejs-webapp-sample/actions/workflows/release.yml)
+
 [![license](https://img.shields.io/github/license/ybkuroki/vuejs-webapp-sample?style=for-the-badge)](https://github.com/ybkuroki/vuejs-webapp-sample/blob/master/LICENSE)
 [![workflow](https://img.shields.io/github/workflow/status/ybkuroki/vuejs-webapp-sample/check?label=check&style=for-the-badge&logo=github)](https://github.com/ybkuroki/vuejs-webapp-sample/actions?query=workflow%3Acheck)
 [![release](https://img.shields.io/github/release/ybkuroki/vuejs-webapp-sample?style=for-the-badge&logo=github)](https://github.com/ybkuroki/vuejs-webapp-sample/releases)
