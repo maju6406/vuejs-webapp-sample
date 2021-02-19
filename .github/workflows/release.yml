@@ -19,21 +19,21 @@ jobs:
           ### Changelog
 
           {commits}
-      - name: Install
-        run: npm ci
+    - name: Install
+      run: npm ci
 
-      - name: Lint
-        run: npm run lint
+    - name: Lint
+      run: npm run lint
 
-      - name: Build
-        run: npm run build
+    - name: Build
+      run: npm run build
 
-      - name: Deploy
-        uses: nogsantos/ssh-scp-deploy@v1.2.1
-        with:
-          src: ./dist/*
-          host: ${{ secrets.SSH_HOST }}
-          remote: ${{ secrets.SSH_DIR }}
-          port: ${{ secrets.SSH_PORT }}
-          user: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+    - name: Deploy
+      uses: nogsantos/ssh-scp-deploy@v1.2.1
+      with:
+        src: ./dist/*
+        host: ${{ secrets.SSH_HOST }}
+        remote: ${{ secrets.SSH_DIR }}
+        port: ${{ secrets.SSH_PORT }}
+        user: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_KEY }}
