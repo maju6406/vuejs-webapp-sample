@@ -50,7 +50,7 @@ npm run build
 ```
 
 ## Project Map
-The follwing figure is the map of this sample project.
+The following figure is the map of this sample project.
 
 ```
 - vuejs-webapp-sample
